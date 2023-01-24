@@ -1,5 +1,8 @@
-site_name: Modelo Agrometeorológico Espectral
+site_name: Documentação - Modelo Agrometeorológico Espectral
 nav:
-    - Home: index.md
-    - About: about.md
+    - Introdução: index.md
+    - Modelo de penalização: modelo.md
+    - Dados: dados.md
+    - Análises: analises.md
+
 theme: readthedocs

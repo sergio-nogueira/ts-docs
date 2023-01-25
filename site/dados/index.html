@@ -41,7 +41,7 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Introdução</a>
+                <li class="toctree-l1"><a class="reference internal" href="..">Apresentação</a>
                 </li>
               </ul>
               <ul>
@@ -56,6 +56,16 @@
     <li class="toctree-l2"><a class="reference internal" href="#espectrais">Espectrais</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#campo">Campo</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#crop-tour-2020-e-2021">Crop Tour 2020 e 2021</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ipiranga-do-norte-mt">Ipiranga do Norte (MT)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mineiros-e-portelandia-go">Mineiros e Portelândia (GO)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#producao-agricola-municipal-ibge">Produção Agrícola Municipal (IBGE)</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#banco-de-dados">Banco de dados</a>
     </li>
@@ -90,16 +100,185 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="dados">Dados</h1>
-<p>Magna dolore consequat eu labore ex anim laboris incididunt proident culpa consectetur dolor.</p>
+<p>Magna dolore consequat eu labore ex anim laboris incididunt proident culpa consectetur dolor. </p>
 <h2 id="meteorologicos">Meteorológicos</h2>
+<p>A ação de requisição à API Agritec retorna um arquivo CSV com os seguintes atributos (<em>colunas</em>):</p>
+<ul>
+<li>Produtividade potencial <em>(produtividadePotencial)</em></li>
+<li>Produtividade do usuário <em>(produtividadeUsuario)</em></li>
+<li>Temperatura mínima <em>(tmin)</em></li>
+<li>Temperatura máxima <em>(tmax)</em></li>
+<li>Graus dia <em>(grausDia)</em></li>
+<li>Armazenamento <em>(armazenamento)</em></li>
+<li>Deficiência <em>(deficiencia)</em></li>
+<li>Excedente <em>(excedente)</em></li>
+<li>Kc <em>(kc)</em></li>
+<li>Ky <em>(ky)</em></li>
+<li>ETr <em>(etr)</em></li>
+<li>ETc <em>(etc)</em></li>
+<li>ISNA <em>(etc.etc)</em></li>
+</ul>
 <p>Qui nostrud aliquip do eiusmod excepteur. Aute tempor eu adipisicing laborum tempor velit voluptate pariatur nostrud. Officia aliquip ullamco qui aliqua laboris in deserunt veniam. Deserunt veniam Lorem mollit consequat aute cillum deserunt esse ullamco. Ut officia est duis dolor esse officia reprehenderit qui proident consequat mollit sint voluptate quis. Voluptate enim quis officia ipsum nulla minim tempor culpa sit aute duis magna commodo. Nulla nostrud velit incididunt tempor consequat reprehenderit laborum ad laborum.</p>
-<p>Non sunt excepteur dolor quis id consectetur velit nulla sint qui minim. Ea non officia anim id nulla id officia velit irure tempor exercitation. Commodo ipsum deserunt incididunt ipsum anim amet. Enim ipsum consequat magna aliqua aliqua eu esse ipsum duis enim enim dolor in labore. Aliqua et qui Lorem est aliquip est fugiat ex. Nisi ullamco dolore eu ea quis veniam incididunt occaecat sit aliqua mollit. Anim occaecat et qui magna voluptate.</p>
 <h2 id="espectrais">Espectrais</h2>
+<p>Aute eiusmod eu do est laboris sint est ullamco elit in aute Lorem. </p>
+<p>A ação de requisição para a API Visiona Time Series retorna um arquivo JSON com os seguintes atributos:</p>
+<ul>
+<li>Datas de início e fim da série</li>
+<li>Dado Bruto<ul>
+<li>Landsat 7<ul>
+<li>Data, NDVI, Blue, Green, Red, NIR, SWIR1, SWIR2</li>
+</ul>
+</li>
+<li>Landsat 8<ul>
+<li>Data, NDVI, Aerosol, Blue, Green, Red, NIR, SWIR1, SWIR2</li>
+</ul>
+</li>
+<li>Landsat 9<ul>
+<li>Data, NDVI, Blue, Green, Red, NIR, SWIR1, SWIR2</li>
+</ul>
+</li>
+<li>Modis<ul>
+<li>Data, NDVI, Cirrus, Blue, Green, Red, NIR, SWIR1, SWIR2</li>
+</ul>
+</li>
+<li>Sentinel 1<ul>
+<li>Data, VH, VH gamma 0, VV, VV gamma 0, Ângulo</li>
+</ul>
+</li>
+<li>Sentinel 2<ul>
+<li>Data, NDVI, Blue, Green, Red, Red Edge 1, Red Edge 2, Red Edge 3, Red Edge 4, NIR, SWIR1, SWIR2, Water Vapor</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Índices<ul>
+<li>NDVI<ul>
+<li>Ano Safra<ul>
+<li>Ciclo<ul>
+<li>Datas<ul>
+<li>Início</li>
+<li>Meio</li>
+<li>Fim</li>
+</ul>
+</li>
+<li>Métricas<ul>
+<li>Área abaixo da curva</li>
+<li>Comprimento do ciclo</li>
+<li>Confiabilidade</li>
+<li>Erro quadrado médio</li>
+<li>Estatísticas<ul>
+<li>Desvio</li>
+<li>Máximo</li>
+<li>Média</li>
+<li>Mediana</li>
+<li>Mínimo</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Série Alinhada <ul>
+<li>Data</li>
+<li>Índice</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Série Original<ul>
+<li>Data</li>
+<li>Índice</li>
+<li>Sensor</li>
+</ul>
+</li>
+<li>Série Processada<ul>
+<li>Ciclos</li>
+<li>Data</li>
+<li>Índice</li>
+<li>Reamostrado</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <p>Qui commodo aliquip veniam quis aliqua proident. Ad elit qui eiusmod amet et proident. Occaecat fugiat eiusmod consequat occaecat laboris reprehenderit pariatur amet laboris in. Ullamco magna minim in velit ex incididunt ad eu exercitation dolor dolor ex. Aute deserunt consequat quis ipsum consequat elit esse.</p>
-<p>Aute eiusmod eu do est laboris sint est ullamco elit in aute Lorem. Amet culpa aute commodo in aliqua commodo sint excepteur id eiusmod ut dolore id anim. Dolore ea eu aute laborum incididunt Lorem reprehenderit consectetur deserunt dolor nostrud sit non. Velit nostrud irure enim veniam laborum.</p>
 <h2 id="campo">Campo</h2>
-<p>Culpa et officia culpa incididunt ipsum do ullamco non eiusmod laboris sunt dolore. Dolor do incididunt velit eiusmod aliqua ad magna eu. Irure fugiat ullamco cupidatat incididunt reprehenderit veniam dolor in.</p>
-<p>Non fugiat labore id tempor anim exercitation. Ut proident do dolor amet enim velit. Ex laboris aliqua ad eu quis aliquip. Laborum eu esse do reprehenderit id cupidatat officia proident magna cupidatat mollit do.</p>
+<p>Os dados de campo são formados por três conjuntos georreferenciados de atributos, denominados "Crop Tour 2021 e 2022", "Ipiranga do Norte (MT)" e "Mineiros e Portelândia (GO)". Estes dados foram obtidos em diferentes propriedades rurais, em diferentes circunstâncias e disponibilizados por fontes distintas. Assim, a composição dos atributos em cada um destes conjuntos não é a mesma. No entanto, alguns destes atributos são constantes. São eles: data, localidade, ano/safra, cultura e produtividade (sc/ha).</p>
+<p>Sit sunt laboris aliqua est veniam voluptate pariatur cillum labore. Lorem eu magna duis aute. Exercitation magna ea culpa elit ut mollit aute nostrud aliqua laboris eiusmod sint officia dolore. Aute ex ex deserunt in irure duis eiusmod tempor.</p>
+<h3 id="crop-tour-2020-e-2021">Crop Tour 2020 e 2021</h3>
+<p>Culpa et officia culpa incididunt ipsum do ullamco non eiusmod laboris sunt dolore. </p>
+<ul>
+<li>data</li>
+<li>localidade</li>
+<li>estadio_fe</li>
+<li>espacament</li>
+<li>plantas2m_</li>
+<li>plantas2_1</li>
+<li>plantas2_2</li>
+<li>graos_plan</li>
+<li>graos_pl_1</li>
+<li>graos_pl_2</li>
+<li>graos_pl_3</li>
+<li>graos_pl_4</li>
+<li>graos_pl_5</li>
+<li>condicao_d</li>
+<li>estimativa</li>
+<li>observacoe</li>
+<li>fotos</li>
+<li>ProdScHa</li>
+<li>cod</li>
+<li>AnoSafra</li>
+<li>Safra</li>
+</ul>
+<h3 id="ipiranga-do-norte-mt">Ipiranga do Norte (MT)</h3>
+<p>Amet exercitation nisi do velit enim ad duis.</p>
+<ul>
+<li>__ID42</li>
+<li>Client_ID</li>
+<li>ClientName</li>
+<li>Farm_ID</li>
+<li>FarmName</li>
+<li>Field_ID</li>
+<li>FieldName</li>
+<li>CropYear</li>
+<li>Commod_ID</li>
+<li>CommodName</li>
+<li>Size</li>
+<li>Soja_08_09</li>
+<li>Soja_09_10</li>
+<li>Soja_10_11</li>
+<li>Soja_11_12</li>
+<li>Soja_12_13</li>
+<li>Soja_13_14</li>
+<li>Soja_14_15</li>
+<li>Soja_15_16</li>
+<li>Soja_16_17</li>
+<li>Soja_17_18</li>
+</ul>
+<h3 id="mineiros-e-portelandia-go">Mineiros e Portelândia (GO)</h3>
+<p>Culpa in consequat est commodo nostrud eu.</p>
+<ul>
+<li>IdTal</li>
+<li>CodTal</li>
+<li>AreaHa</li>
+<li>AnoSafra</li>
+<li>Safra</li>
+<li>Cultura</li>
+<li>DataFimPla</li>
+<li>DataIniCol</li>
+<li>DuracaDias</li>
+<li>RendScHa</li>
+<li>Variedade</li>
+<li>TipoPlan</li>
+<li>Declividade</li>
+<li>Argila</li>
+<li>Silte</li>
+<li>Areia</li>
+<li>Nome</li>
+</ul>
+<h2 id="producao-agricola-municipal-ibge">Produção Agrícola Municipal (IBGE)</h2>
 <h2 id="banco-de-dados">Banco de dados</h2>
 <p>Qui esse irure non ea dolore ipsum dolore. Labore voluptate ex ad nisi veniam amet Lorem excepteur. Veniam deserunt nulla adipisicing qui duis qui irure velit id consequat sit culpa voluptate consequat.</p>
 <p>Laborum labore culpa nostrud incididunt culpa non eu irure eiusmod non proident deserunt elit non. Commodo do voluptate veniam laboris ipsum aliqua aliqua enim tempor ipsum officia qui. Lorem tempor aliqua consequat voluptate commodo incididunt. Non duis quis anim dolore sit sunt. Eiusmod magna reprehenderit ad fugiat eiusmod officia cillum ad sunt sint. Est nostrud est labore adipisicing pariatur pariatur pariatur enim minim Lorem mollit.</p>
